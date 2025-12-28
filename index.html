@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wanderlust Guide | Discover the World</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">
+                <i class="fas fa-globe-americas"></i> Wanderlust Guide
+            </a>
+            <div class="nav-toggle" id="navToggle">
+                <i class="fas fa-bars"></i>
+            </div>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html" class="active"><i class="fas fa-home"></i> Home</a></li>
+                <li><a href="#destinations"><i class="fas fa-map-marked-alt"></i> Destinations</a></li>
+                <li><a href="#features"><i class="fas fa-star"></i> Features</a></li>
+                <li><a href="#about"><i class="fas fa-users"></i> Team</a></li>
+                <li><a href="#contact"><i class="fas fa-envelope"></i> Contact</a></li>
+            </ul>
+            <div class="theme-toggle" id="themeToggle">
+                <i class="fas fa-moon"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">Discover Your Next Adventure</h1>
+            <p class="hero-subtitle">Expert travel guides for the world's most amazing destinations. Plan your perfect trip with our comprehensive guides.</p>
+            <div class="hero-buttons">
+                <a href="#destinations" class="btn btn-primary">
+                    <i class="fas fa-compass"></i> Explore Destinations
+                </a>
+                <a href="#features" class="btn btn-secondary">
+                    <i class="fas fa-play-circle"></i> How It Works
+                </a>
+            </div>
+        </div>
+        <div class="hero-stats">
+            <div class="stat">
+                <h3>9+</h3>
+                <p>Destinations</p>
+            </div>
+            <div class="stat">
+                <h3>50+</h3>
+                <p>Travel Tips</p>
+            </div>
+            <div class="stat">
+                <h3>10</h3>
+                <p>Team Members</p>
+            </div>
+        </div>
+    </header>
+
+    <!-- Destinations Grid -->
+    <section id="destinations" class="destinations">
+        <div class="container">
+            <div class="section-header">
+                <h2>Explore Top Destinations</h2>
+                <p>Click on any destination to view detailed travel guides, tips, and recommendations</p>
+            </div>
+            
+            <div class="search-box">
+                <input type="text" id="searchInput" placeholder="Search destinations...">
+                <i class="fas fa-search"></i>
+            </div>
+            
+            <div class="grid" id="destinationsGrid">
+                <!-- Paris -->
+                <div class="card" data-city="paris">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1502602898657-3e91760cbb34?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Paris">
+                        <div class="card-badge">
+                            <i class="fas fa-heart"></i> Romantic
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <div class="card-header">
+                            <h3>Paris, France</h3>
+                            <span class="rating">4.8 <i class="fas fa-star"></i></span>
+                        </div>
+                        <p class="card-description">The city of lights, love, and incredible cuisine. Explore iconic landmarks and charming cafes.</p>
+                        <div class="card-details">
+                            <span><i class="fas fa-euro-sign"></i> Moderate</span>
+                            <span><i class="fas fa-sun"></i> 15-25°C</span>
+                            <span><i class="fas fa-language"></i> French</span>
+                        </div>
+                        <a href="pages/paris.html" class="btn-card">
+                            Explore Guide <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Tokyo -->
+                <div class="card" data-city="tokyo">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1540959733332-eab4deabeeaf?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Tokyo">
+                        <div class="card-badge">
+                            <i class="fas fa-robot"></i> Futuristic
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <div class="card-header">
+                            <h3>Tokyo, Japan</h3>
+                            <span class="rating">4.9 <i class="fas fa-star"></i></span>
+                        </div>
+                        <p class="card-description">Where ancient temples meet neon skyscrapers. Experience unique culture and cuisine.</p>
+                        <div class="card-details">
+                            <span><i class="fas fa-yen-sign"></i> Expensive</span>
+                            <span><i class="fas fa-sun"></i> 10-30°C</span>
+                            <span><i class="fas fa-language"></i> Japanese</span>
+                        </div>
+                        <a href="pages/tokyo.html" class="btn-card">
+                            Explore Guide <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- New York -->
+                <div class="card" data-city="new york">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1496442226666-8d4d0e62e6e9?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="New York">
+                        <div class="card-badge">
+                            <i class="fas fa-city"></i> Urban
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <div class="card-header">
+                            <h3>New York, USA</h3>
+                            <span class="rating">4.7 <i class="fas fa-star"></i></span>
+                        </div>
+                        <p class="card-description">The city that never sleeps. Iconic skyscrapers, Broadway shows, and diverse neighborhoods.</p>
+                        <div class="card-details">
+                            <span><i class="fas fa-dollar-sign"></i> Expensive</span>
+                            <span><i class="fas fa-sun"></i> -5-30°C</span>
+                            <span><i class="fas fa-language"></i> English</span>
+                        </div>
+                        <a href="pages/newyork.html" class="btn-card">
+                            Explore Guide <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Cape Town -->
+                <div class="card" data-city="cape town">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1516035069371-29a1b244cc32?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Cape Town">
+                        <div class="card-badge">
+                            <i class="fas fa-mountain"></i> Scenic
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <div class="card-header">
+                            <h3>Cape Town, South Africa</h3>
+                            <span class="rating">4.8 <i class="fas fa-star"></i></span>
+                        </div>
+                        <p class="card-description">Where mountains meet oceans. Stunning landscapes and rich cultural heritage.</p>
+                        <div class="card-details">
+                            <span><i class="fas fa-dollar-sign"></i> Moderate</span>
+                            <span><i class="fas fa-sun"></i> 10-28°C</span>
+                            <span><i class="fas fa-language"></i> English</span>
+                        </div>
+                        <a href="pages/capetown.html" class="btn-card">
+                            Explore Guide <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Sydney -->
+                <div class="card" data-city="sydney">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1506973035872-a4ec16b8e8d9?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Sydney">
+                        <div class="card-badge">
+                            <i class="fas fa-water"></i> Coastal
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <div class="card-header">
+                            <h3>Sydney, Australia</h3>
+                            <span class="rating">4.7 <i class="fas fa-star"></i></span>
+                        </div>
+                        <p class="card-description">Famous harbor, beautiful beaches, and vibrant arts scene. Perfect coastal city.</p>
+                        <div class="card-details">
+                            <span><i class="fas fa-dollar-sign"></i> Expensive</span>
+                            <span><i class="fas fa-sun"></i> 10-26°C</span>
+                            <span><i class="fas fa-language"></i> English</span>
+                        </div>
+                        <a href="pages/sydney.html" class="btn-card">
+                            Explore Guide <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Rio de Janeiro -->
+                <div class="card" data-city="rio">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1483729558449-99ef09a8c325?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Rio">
+                        <div class="card-badge">
+                            <i class="fas fa-umbrella-beach"></i> Beach
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <div class="card-header">
+                            <h3>Rio de Janeiro, Brazil</h3>
+                            <span class="rating">4.6 <i class="fas fa-star"></i></span>
+                        </div>
+                        <p class="card-description">Vibrant carnival, iconic beaches, and stunning natural landscapes. Pure energy.</p>
+                        <div class="card-details">
+                            <span><i class="fas fa-dollar-sign"></i> Budget</span>
+                            <span><i class="fas fa-sun"></i> 22-30°C</span>
+                            <span><i class="fas fa-language"></i> Portuguese</span>
+                        </div>
+                        <a href="pages/rio.html" class="btn-card">
+                            Explore Guide <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Dubai -->
+                <div class="card" data-city="dubai">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1512453979798-5ea266f8880c?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Dubai">
+                        <div class="card-badge">
+                            <i class="fas fa-gem"></i> Luxury
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <div class="card-header">
+                            <h3>Dubai, UAE</h3>
+                            <span class="rating">4.8 <i class="fas fa-star"></i></span>
+                        </div>
+                        <p class="card-description">Ultra-modern architecture, luxury shopping, and desert adventures.</p>
+                        <div class="card-details">
+                            <span><i class="fas fa-dollar-sign"></i> Luxury</span>
+                            <span><i class="fas fa-sun"></i> 20-45°C</span>
+                            <span><i class="fas fa-language"></i> Arabic</span>
+                        </div>
+                        <a href="pages/dubai.html" class="btn-card">
+                            Explore Guide <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Bali -->
+                <div class="card" data-city="bali">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1537953773345-d172ccf13cf1?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Bali">
+                        <div class="card-badge">
+                            <i class="fas fa-spa"></i> Relaxing
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <div class="card-header">
+                            <h3>Bali, Indonesia</h3>
+                            <span class="rating">4.9 <i class="fas fa-star"></i></span>
+                        </div>
+                        <p class="card-description">Tropical paradise with beautiful temples, beaches, and spiritual retreats.</p>
+                        <div class="card-details">
+                            <span><i class="fas fa-dollar-sign"></i> Budget</span>
+                            <span><i class="fas fa-sun"></i> 25-32°C</span>
+                            <span><i class="fas fa-language"></i> Indonesian</span>
+                        </div>
+                        <a href="pages/bali.html" class="btn-card">
+                            Explore Guide <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Rome -->
+                <div class="card" data-city="rome">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1552832230-c0197dd311b5?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Rome">
+                        <div class="card-badge">
+                            <i class="fas fa-landmark"></i> Historical
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <div class="card-header">
+                            <h3>Rome, Italy</h3>
+                            <span class="rating">4.8 <i class="fas fa-star"></i></span>
+                        </div>
+                        <p class="card-description">Eternal city with ancient ruins, Renaissance art, and delicious cuisine.</p>
+                        <div class="card-details">
+                            <span><i class="fas fa-euro-sign"></i> Moderate</span>
+                            <span><i class="fas fa-sun"></i> 5-30°C</span>
+                            <span><i class="fas fa-language"></i> Italian</span>
+                        </div>
+                        <a href="pages/rome.html" class="btn-card">
+                            Explore Guide <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="features">
+        <div class="container">
+            <div class="section-header">
+                <h2>Why Choose Our Guides?</h2>
+                <p>Comprehensive travel information curated by experienced travelers</p>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-map-marked-alt"></i>
+                    </div>
+                    <h3>Detailed Maps</h3>
+                    <p>Interactive maps with all key locations marked for easy navigation.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-wallet"></i>
+                    </div>
+                    <h3>Budget Planning</h3>
+                    <p>Cost breakdowns and money-saving tips for every destination.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-utensils"></i>
+                    </div>
+                    <h3>Food Guides</h3>
+                    <p>Local cuisine recommendations and must-try dishes in each city.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-calendar-alt"></i>
+                    </div>
+                    <h3>Seasonal Advice</h3>
+                    <p>Best times to visit and seasonal events for optimal travel experience.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section id="about" class="team">
+        <div class="container">
+            <div class="section-header">
+                <h2>Our Travel Experts</h2>
+                <p>Meet the team behind these comprehensive travel guides</p>
+            </div>
+            <div class="team-grid">
+                <div class="team-member">
+                    <div class="member-avatar">GL</div>
+                    <h3>Group Leader</h3>
+                    <p>Project Coordinator</p>
+                    <p>Paris, Tokyo, New York</p>
+                </div>
+                <div class="team-member">
+                    <div class="member-avatar">M1</div>
+                    <h3>Member 1</h3>
+                    <p>Travel Writer</p>
+                    <p>Cape Town Specialist</p>
+                </div>
+                <div class="team-member">
+                    <div class="member-avatar">M2</div>
+                    <h3>Member 2</h3>
+                    <p>Photographer</p>
+                    <p>Sydney Expert</p>
+                </div>
+                <div class="team-member">
+                    <div class="member-avatar">M3</div>
+                    <h3>Member 3</h3>
+                    <p>Food Blogger</p>
+                    <p>Rio Cuisine Guide</p>
+                </div>
+                <!-- Add more team members as needed -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section class="newsletter">
+        <div class="container">
+            <div class="newsletter-content">
+                <h2>Get Travel Tips & Updates</h2>
+                <p>Subscribe to our newsletter for new destination guides and travel advice</p>
+                <form id="newsletterForm">
+                    <input type="email" placeholder="Your email address" required>
+                    <button type="submit" class="btn btn-primary">
+                        <i class="fas fa-paper-plane"></i> Subscribe
+                    </button>
+                </form>
+                <p class="newsletter-note">No spam. Unsubscribe at any time.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3><i class="fas fa-globe-americas"></i> Wanderlust Guide</h3>
+                    <p>Comprehensive travel guides created by passionate travelers. Your journey begins here.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="#destinations">Destinations</a></li>
+                        <li><a href="#features">Features</a></li>
+                        <li><a href="#about">Our Team</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact Info</h3>
+                    <p><i class="fas fa-envelope"></i> contact@wanderlustguide.com</p>
+                    <p><i class="fas fa-phone"></i> +255 123 456 789</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Dar es Salaam, Tanzania</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Wanderlust Guide. All rights reserved. | Web Development Group Project</p>
+                <p>Created with <i class="fas fa-heart"></i> by [Your Group Name]</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
